@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import './MainComponent.css'
 
 const EmailComponent = () => {
-  const inputRef = useRef()
+  const inputRef = useRef(null)
 
   const handleClick = () =>{
     inputRef.current.focus()
