@@ -1,0 +1,57 @@
+body {
+    /* background: linear-gradient(to bottom, black, brown); */
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* background: linear-gradient(to bottom, black, brown); */
+}
+
+.netflix-logo {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 9.25rem;
+  height: 2.5rem;
+  fill: red;
+}
+
+.container {
+  margin-top: 20px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#dropdown {
+  border: 2px white double;
+  color: whitesmoke;
+  background-color: black;
+  margin-right: 20px;
+  border-radius: 30px;
+  padding: 4px 30px 4px 28px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#dropdown:focus {
+  outline: none;
+  border-color: white;
+  /* box-shadow: 0 0 0 2px black; */
+}
+
+option{
+    color: black;
+    background-color: white;
+}
+
+.sign-in-btn {
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 5px 20px 5px 20px;
+}
+
+.sign-in-btn:hover{
+    background-color: lightgrey;
+}

@@ -1,0 +1,68 @@
+.trending-container {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+}
+
+.trending-container h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: aliceblue;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.scroll-container-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.scroll-container-btn button {
+  width: 3%;
+  font-size: 12px;
+  padding: 40px 0px 40px 0px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.scroll-container-btn button:hover {
+  background-color: #444;
+}
+
+.posters-scroll-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.posters-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.posters-list {
+  display: flex;
+  gap: 30px;
+  min-width: max-content;
+  overflow: hidden;
+}

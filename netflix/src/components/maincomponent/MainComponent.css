@@ -1,0 +1,105 @@
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1000px 0;
+  }
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.background-container {
+  /* background-color: yellow; */
+  position: relative;
+  margin: 20px 40px 0 30px;
+  height: 70vh;
+  border-radius: 20px;
+  /* border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../Assets/bckground image.jpg");
+  /* background-repeat: repeat-x; */
+  background-size: auto 100%;
+  background-position: 0 0;
+  animation: scrollBackground 30s linear infinite;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.content {
+  height: 100vh;
+  /* background-color: yellow; */
+  width: 60%;
+  margin: 60px;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-heading {
+  font-size: 3rem;
+  /* font-family: Helvetica, sans-serif; */
+  font-weight: 800;
+  text-align: center;
+  max-width: 70%;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  z-index: 1;
+  position: relative;
+  white-space: pre-line;
+}
+
+.subscription-heading {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.mail-conatiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  /* margin-left: 20px; */
+  /* height: 40px; */
+  width: 60%;
+  border-radius: 50px;
+  border: none;
+  background-color: lightgray;
+  padding: 5px;
+}
+
+.btn-started {
+  height: 50px;
+  width: 30%;
+  border-radius: 40px;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}

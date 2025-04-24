@@ -1,0 +1,55 @@
+.query-container{  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: auto; */
+  padding: 5px;
+  height: auto;
+  /* width: 80%; */
+  background-color: rgba(255, 255, 255, 0.1);
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.answer-container{
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+  height: auto;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.query-container p{
+  font-size: larger;
+}
+
+.answer-container p{
+  font-size: larger;
+}
+
+.sign{
+  margin-right: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.plus-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(45deg); 
+}
